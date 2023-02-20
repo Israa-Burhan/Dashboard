@@ -1,0 +1,80 @@
+@use "./variables" as *;
+// start plans
+
+.section-plans{
+  .col-md-12{
+    @media (max-width: 1397px) {
+      width: calc(100% / 2);
+    }
+    @media (max-width: 1050px) {
+      width: calc(100% / 1);
+    }
+  }
+  .col-12 {
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  .col{
+    min-height: 400px;
+    padding: 7px;
+    .top-plan{
+      padding: 17px 10px ;
+      background-color: #22c55e;
+      color: #fff;
+      text-align: center;
+      border: 3px solid #fff;
+      outline: 3px solid #22c55e;
+      h2{
+        letter-spacing: -1px;
+      }
+      div{
+        font-size: 40px;
+        position: relative;
+        width: fit-content;
+        margin: auto;
+        span{
+          position: absolute;
+          font-size: 27px;
+          top: -8px;
+          left:-15px;
+        }
+      }
+    }
+    .top2{
+      background-color: #0075ff;
+      outline: 3px solid #0075ff;
+    }
+    .top3{
+      background-color: #f59e0b;
+      outline: 3px solid #f59e0b;
+    }
+    ul{
+      li{
+        svg{
+          color: #22c55e;
+        }
+        span{
+          font-size: 15px;
+        }
+        .icon{
+          color: #888;
+        }
+        .false{
+          color: red;
+        }
+      }
+    }
+    .btn{
+      background-color: #22c55e;
+      color: #fff;
+      font-size: 20px;
+      padding: 0px 7px !important;
+    }
+    .btn2{
+      background-color: #0075ff;
+    }
+  }
+}
+
+// end plans

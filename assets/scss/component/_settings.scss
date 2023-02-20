@@ -1,0 +1,347 @@
+@use "./variables" as *;
+// start page
+.page {
+  min-height: 100vh;
+  background-color: $eight-color;
+
+  // start sidebar
+
+  .sidebar {
+    width: 200px;
+    background-color: $six-color;
+    padding: 15px;
+    box-shadow: 0 0 15px $twenty-color;
+    h4 {
+      font-weight: 700;
+      margin-bottom: 40px;
+      padding-bottom: 15px;
+      &::after,
+      &::before {
+        content: "";
+        background: $seven-color;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+      &::before {
+        width: 122px;
+        height: 3px;
+        top: 100%;
+      }
+      &::after {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        bottom: -11px;
+        border: 3px solid $six-color;
+      }
+      @media (max-width: 767px) {
+        margin-bottom: 12px;
+        font-size: 14px;
+      }
+    }
+    li {
+      a {
+        font-size: 14px;
+        padding: 10px;
+        color: $seven-color;
+        transition: 0.3s;
+        margin-bottom: 5px;
+        span {
+          font-size: 14px;
+          margin-left: 12px;
+          @media (max-width: 767px) {
+            display: none;
+          }
+        }
+        :hover {
+          background-color: $nine-color;
+        }
+      }
+      :hover,
+      a.active {
+        background-color: $nine-color;
+      }
+    }
+    @media (max-width: 767px) {
+      width: 70px;
+    }
+  }
+
+  // end sidebar
+  // start content
+
+  .content {
+    width: calc(100% - 200px);
+    @media (max-width: 767px) {
+      width: calc(100% - 70px);
+    }
+
+    // start header
+    .header {
+      background: #fdfdfd;
+      .search {
+        input[type="search"] {
+          font-size: 16px;
+          padding: 5px;
+          font-weight: 600;
+          border: 1px solid $twenty-color;
+          border-radius: 10px;
+          padding-left: 25px;
+          width: 170px;
+          outline-offset: 0 !important;
+        }
+        svg {
+          position: absolute;
+          left: 5px;
+          bottom: 27%;
+          opacity: 0.5;
+        }
+      }
+      .icons {
+        .notice {
+          font-size: 16px;
+          &::after {
+            content: "";
+            position: absolute;
+            background-color: red;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            bottom: 17px;
+            left: 13px;
+          }
+        }
+        img {
+          width: 30px;
+          height: 30px;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    // end header
+    // start heading
+
+    h1 {
+      margin: 20px 20px 40px;
+      font-weight: 600;
+      font-size: 35px;
+      letter-spacing: -1px;
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        height: 3px;
+        left: 0;
+        bottom: -20px;
+      }
+      &::before {
+        background: $six-color;
+        width: 130px;
+      }
+      &::after {
+        background-color: $seven-color;
+        width: 45px;
+      }
+    }
+
+    // end heading
+    // start section //
+
+    .section {
+      .col-md-6 {
+        @media (max-width: 1300px) {
+          width: 50%;
+        }
+      }
+      .col-12 {
+        @media (max-width: 992px) {
+          width: 100%;
+        }
+      }
+      .column {
+        min-height: 400px;
+        @media (max-width: 1300px) {
+          padding: 7px !important;
+        }
+        @media (max-width: 992px) {
+          padding: 10px !important;
+        }
+
+        // start Site-Control //
+
+        .Site-Control {
+          p {
+            font-size: 14px;
+            color: #888;
+          }
+          .form-check-input {
+            width: 55px;
+            height: 25px;
+            margin-left: 5px;
+          }
+          textarea {
+            font-size: 13px;
+            outline: none;
+            resize: none;
+            min-height: 150px;
+            border-width: 1px;
+          }
+        }
+
+        // end Site-Control //
+        // start General Info //
+
+        .General-Info {
+          p {
+            font-size: 14px;
+            color: #888;
+          }
+          label {
+            color: gray;
+            font-size: 14px;
+          }
+          input {
+            border: 1px solid #ccc;
+            outline: none;
+            box-shadow: none;
+            font-size: 14px;
+          }
+          input[type="email"] {
+            width: calc(100% - 80px);
+            background-color: #f0f4f8;
+          }
+        }
+
+        // end General Info //
+        // start Security Info //
+
+        .Security-Info {
+          p {
+            font-size: 14px;
+            color: #888;
+          }
+          .form-check-input {
+            width: 55px;
+            height: 25px;
+            margin-left: 5px;
+          }
+          &:first-child a {
+            @media (max-width: 768px) {
+              padding: 5px !important;
+              font-size: 13px;
+            }
+          }
+          &:last-child a {
+            background-color: #eeeeee;
+          }
+        }
+
+        // end Security Info //
+        // start Social Info
+
+        .Social-Info {
+          p {
+            font-size: 14px;
+          }
+          ul {
+            li {
+              border-radius: 6px;
+              font-size: 14px;
+              background-color: #f6f6f6;
+              border: 1px solid #ccc;
+              input[type="text"] {
+                color: #888;
+                height: 40px;
+                background-color: #f6f6f6;
+                border: 0;
+                padding-left: 10px;
+                border-left: 1px solid #ccc;
+                &:focus {
+                  outline: none !important;
+                }
+              }
+              .icon {
+                color: #888;
+                &:visited {
+                  color: #000;
+                }
+              }
+            }
+          }
+        }
+
+        // end Social Info
+        // start Widgets Control
+
+        .Widgets-Control {
+          p {
+            font-size: 14px;
+          }
+          .form-check {
+            margin-bottom: 15px;
+            label {
+              font-weight: 500;
+            }
+            .form-check-input {
+              &:focus {
+                box-shadow: none !important;
+              }
+            }
+          }
+        }
+
+        // end Widgets Control
+        // start Backup Manager
+
+        .Backup-Manager {
+          p {
+            font-size: 14px;
+          }
+          .form-check {
+            margin-bottom: 15px;
+            label {
+              font-weight: 500;
+              padding-left: 8px;
+            }
+            .form-check-input {
+              width: 20px;
+              height: 20px;
+              &:focus {
+                box-shadow: none !important;
+              }
+            }
+          }
+          .boxes {
+            display: flex;
+            .server {
+              border: 1px solid #ccc;
+              padding: 15px;
+              border-radius: 10px;
+              color: #000000;
+              cursor: pointer;
+              transition: 0.5s;
+              &:hover {
+                border: 1px solid #0075ff;
+                color: #0075ff;
+              }
+              @media (max-width: 767px) {
+                margin-bottom: 15px;
+              }
+            }
+            @media (max-width: 767px) {
+              flex-wrap: wrap;
+            }
+          }
+        }
+        // end Backup Manager
+      }
+    }
+
+    // end section //
+  }
+}

@@ -1,0 +1,159 @@
+@use "./variables" as *;
+// start section //
+.section-gro {
+  @media (max-width: 767px) {
+    flex-direction: column-reverse;
+  }
+}
+.section-file {
+  width: calc(100% - 300px);
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+  .column {
+    @media (max-width: 1670px) {
+      width: calc(100% / 5);
+    }
+    padding: 10px !important;
+    @media (max-width: 992px) {
+      padding: 10px !important;
+    }
+  }
+  .col-md-3 {
+    @media (max-width: 1550px) {
+      width: calc(100% / 4);
+    }
+    @media (max-width: 1400px) {
+      width: calc(100% / 3);
+    }
+    @media (max-width: 1190px) {
+      width: calc(100% / 2);
+    }
+  }
+  .col-12 {
+    @media (max-width: 950px) {
+      width: 100%;
+    }
+  }
+  .files-Control {
+    .card {
+      .card-head {
+        .card-img-top {
+          width: 70px;
+          height: 70px;
+        }
+        h3 {
+          font-size: 14px;
+        }
+      }
+      .contact {
+        left: 0;
+        top: 0;
+        svg {
+          padding: 10px;
+          font-size: 16px;
+          color: gray;
+          cursor: pointer;
+        }
+      }
+      .card-body {
+        .icon {
+          span {
+            font-size: 13px;
+            font-weight: 600;
+            color: gray;
+          }
+        }
+      }
+      hr {
+        opacity: 0.1;
+      }
+      .badge-gro {
+        .badge {
+          color: gray;
+          font-size: 13px;
+          font-weight: 500;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+//----//
+.section-2 {
+  width: 290px;
+  padding-top: 10px;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+  @media (max-width: 767px) {
+    padding: 10px !important;
+  }
+  .files-Control {
+    .card {
+      .card-uploads {
+        hr {
+          opacity: 0.1;
+        }
+        .section-uploads {
+          border: 1px solid #eee;
+          h5 {
+            font-size: 13px;
+          }
+          img {
+            width: 40px;
+          }
+          .text-uploads {
+            p {
+              font-size: 13px;
+              color: gray;
+            }
+          }
+          .badge {
+            width: fit-content;
+            color: gray;
+            font-weight: 500;
+          }
+          .icon {
+            padding: 14px;
+            margin-right: 7px;
+          }
+          .blue {
+            color: #0075ff;
+            background-color: rgb(0, 117, 255, 20%);
+          }
+          .green {
+            color: #22c55e;
+            background-color: rgb(34, 197, 94, 20%);
+          }
+          .red {
+            color: #f44336;
+            background-color: rgb(244, 67, 54, 20%);
+          }
+          .orange {
+            color: #f59e0b;
+            background-color: rgb(245, 158, 11, 20%);
+          }
+        }
+      }
+      .Upload {
+        .badge-up {
+          background-color: #0075ff;
+          padding: 10px 17px;
+          font-weight: 500;
+          font-size: 13px;
+          &:hover {
+            background-color: rgba(0, 0, 255, 0.733);
+          }
+          transition: 0.3s;
+          &:hover svg {
+            animation: go-up 0.8s infinite;
+          }
+        }
+      }
+    }
+  }
+}
+
+// end section //

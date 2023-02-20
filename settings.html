@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings</title>
+  <link rel="stylesheet" href="./assets/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+   rel="stylesheet" />
+ </head>
+ <!-- start page -->
+ <div class="page d-flex">
+  <!-- start sidebar -->
+  <div class="sidebar">
+   <div class="logo position-relative">
+    <h4 class="text-center">Isra'a</h4>
+   </div>
+   <ul class="p-0 position-fixed">
+    <li>
+     <a class="d-flex align-items-center" href="index.html">
+      <i class="fa-solid fa-chart-bar fa-fw"></i>
+      <span>Dashboard</span>
+     </a>
+    </li>
+    <li>
+     <a class="active d-flex align-items-center" href="settings.html">
+      <i class="fa-solid fa-gear fa-fw"></i>
+      <span>Settings</span>
+     </a>
+    </li>
+    <li>
+     <a class="d-flex align-items-center" href="profile.html">
+      <i class="fa-regular fa-user fa-fw"></i>
+      <span>Profile</span>
+     </a>
+    </li>
+    <li>
+     <a class="d-flex align-items-center" href="projects.html">
+      <i class="fa-solid fa-diagram-project fa-fw"></i>
+      <span>Projects</span>
+     </a>
+    </li>
+    <li>
+     <a class="d-flex align-items-center" href="courses.html">
+      <i class="fa-solid fa-graduation-cap fa-fw"></i>
+      <span>Courses</span>
+     </a>
+    </li>
+    <li>
+     <a class="d-flex align-items-center" href="friends.html">
+      <i class="fa-regular fa-circle-user fa-fw"></i>
+      <span>Friends</span>
+     </a>
+    </li>
+    <li>
+     <a class="d-flex align-items-center" href="files.html">
+      <i class="fa-regular fa-file fa-fw"></i>
+      <span>Files</span>
+     </a>
+    </li>
+    <li>
+     <a class="d-flex align-items-center" href="plans.html">
+      <i class="fa-regular fa-credit-card fa-fw"></i>
+      <span>Plans</span>
+     </a>
+    </li>
+   </ul>
+  </div>
+  <!-- end sidebar -->
+  <!-- start content -->
+  <div class="content">
+   <!-- start header  -->
+   <div class="header p-3 d-flex justify-content-between align-items-center">
+    <div class="search position-relative">
+     <input type="search" placeholder="Type A Keyword" aria-label="Search" />
+     <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <div class="icons d-flex align-items-center">
+     <span class="notice position-relative">
+      <i class="fa-regular fa-bell fa-lg"></i>
+     </span>
+     <img src="./assets/img/avatar.png" alt="" />
+    </div>
+   </div>
+   <!-- end header -->
+   <!-- start heading -->
+   <h1 class="position-relative">Settings</h1>
+   <!-- end heading -->
+   <!-- start section -->
+   <div class="d-flex flex-wrap section">
+    <!-- start Site Control -->
+
+    <div class="col col-md-6 col-12 col-lg-4 p-3 pe-0 column">
+     <div class="bg-white h-100 Site-Control rounded p-3">
+      <h3 class="mt-0 fs-3 fw-bold">Site Control</h3>
+      <p>Control The Website If There Is Maintenance</p>
+      <div class="d-flex align-items-center justify-content-between mb-3">
+       <div>
+        <span>Website Control</span>
+        <p>Open/Close Website And Type The Reason</p>
+       </div>
+       <div>
+        <div class="form-check form-switch">
+         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+        </div>
+       </div>
+      </div>
+      <textarea class="p-2 rounded d-block w-100" placeholder="Close Message Content"></textarea>
+     </div>
+    </div>
+
+    <!-- end Site Control -->
+    <!-- end General Info -->
+
+    <div class="col col-md-6 col-12 col-lg-4 p-3 pe-0 column">
+     <div class="bg-white h-100 General-Info rounded p-3">
+      <h3 class="mt-0 fs-3 fw-bold">General Info</h3>
+      <p>General Information About Your Account</p>
+      <div class="mb-3">
+       <label class="d-block mb-2" for="first">First Name</label>
+       <input class="rounded d-block w-100 p-2" type="text" id="first" placeholder="First Name" />
+      </div>
+      <div class="mb-3">
+       <label class="d-block mb-2" for="last">Last Name</label>
+       <input class="rounded d-block w-100 p-2" id="last" type="text" placeholder="Last Name" />
+      </div>
+      <div>
+       <label class="d-block mb-2" for="email">Email</label>
+       <input class="rounded d-inline-block p-2" id="email" type="email" value="o@nn.sa" disabled />
+       <a href="#">Change</a>
+      </div>
+     </div>
+    </div>
+
+    <!-- end General Info -->
+    <!-- end Security Info -->
+
+    <div class="col col-md-6 col-12 col-lg-4 p-3 column">
+     <div class="bg-white h-100 Security-Info rounded p-3">
+      <h3 class="mt-0 fs-3 fw-bold">Security Info</h3>
+      <p>Security Information About Your Account</p>
+      <div class="d-flex align-items-center justify-content-between pb-2 mb-4 border-bottom mt-4">
+       <div>
+        <span>Password</span>
+        <p class="mb-2">Last Change On 25/10/2021</p>
+       </div>
+       <a class="bg-primary text-white btn p-1 ps-2 pe-2" href="#">Change</a>
+      </div>
+      <div class="d-flex align-items-center justify-content-between pb-2 mb-4 border-bottom mt-4">
+       <div>
+        <span>Two-Factor Authentication</span>
+        <p class="mb-2">Enable/Disable The Feature</p>
+       </div>
+       <label>
+        <div class="form-check form-switch">
+         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+        </div>
+       </label>
+      </div>
+      <div class="d-flex align-items-center justify-content-between mt-4">
+       <div>
+        <span>Devices</span>
+        <p class="mb-2">Check The Login Devices List</p>
+       </div>
+       <a class="text-black p-1 pe-2 ps-2 rounded" href="#">Devices</a>
+      </div>
+     </div>
+    </div>
+
+    <!-- end Security Info -->
+    <!-- end Social  Info -->
+
+    <div class="col col-md-6 col-12 col-lg-4 p-3 pt-0 pe-0 column">
+     <div class="bg-white h-100 Social-Info rounded p-3">
+      <h3 class="mt-0 fs-3 fw-bold">Social Info</h3>
+      <p class="text-muted">Social Media Information</p>
+      <ul class="p-0">
+       <li class="d-flex align-items-center mb-3">
+        <div class="icon p-2"><i class="fa-brands fa-twitter fa-fw"></i></div>
+        <input class="w-100 flex-grow-1" type="text" placeholder="Twitter Username" />
+       </li>
+       <li class="d-flex align-items-center mb-3">
+        <div class="icon p-2"><i class="fa-brands fa-facebook-f fa-fw"></i></div>
+        <input class="w-100 flex-grow-1" type="text" placeholder="Facebook Username" />
+       </li>
+       <li class="d-flex align-items-center mb-3">
+        <div class="icon p-2"><i class="fa-brands fa-linkedin fa-fw"></i></div>
+        <input class="w-100 flex-grow-1" type="text" placeholder="Linkedin Username" />
+       </li>
+       <li class="d-flex align-items-center">
+        <div class="icon p-2"><i class="fa-brands fa-youtube fa-fw"></i></div>
+        <input class="w-100 flex-grow-1" type="text" placeholder="Youtube Username" />
+       </li>
+      </ul>
+     </div>
+    </div>
+
+    <!-- end Social  Info -->
+    <!-- end Widgets Control -->
+
+    <div class="col col-md-6 col-12 col-lg-4 p-3 pt-0 pe-0 column">
+     <div class="bg-white h-100 Widgets-Control rounded p-3">
+      <h3 class="mt-0 fs-3 fw-bold">Widgets Control</h3>
+      <p class="text-muted">Show/Hide Widgets</p>
+      <div class="form-check">
+       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
+       <label class="form-check-label" for="flexCheckDefault"> Quick Draft </label>
+      </div>
+      <div class="form-check">
+       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
+       <label class="form-check-label" for="flexCheckDefault"> Yearly Targets </label>
+      </div>
+      <div class="form-check">
+       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
+       <label class="form-check-label" for="flexCheckDefault"> Tickets Statistics </label>
+      </div>
+      <div class="form-check">
+       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
+       <label class="form-check-label" for="flexCheckDefault"> Latest News </label>
+      </div>
+      <div class="form-check">
+       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+       <label class="form-check-label" for="flexCheckDefault"> Latest Tasks </label>
+      </div>
+      <div class="form-check">
+       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked />
+       <label class="form-check-label" for="flexCheckDefault"> Top Search Items </label>
+      </div>
+     </div>
+    </div>
+
+    <!-- end Widgets Control -->
+    <!-- end Backup Manager -->
+
+    <div class="col col-md-6 col-12 col-lg-4 pt-0 p-3 column">
+     <div class="bg-white h-100 Backup-Manager rounded p-3">
+      <h3 class="mt-0 fs-3 fw-bold">Backup Manager</h3>
+      <p class="text-muted">Control Backup Time And Location</p>
+      <div class="border-bottom">
+       <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" />
+        <label class="form-check-label" for="exampleRadios1"> Daily </label>
+       </div>
+       <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" />
+        <label class="form-check-label" for="exampleRadios1"> Weekly </label>
+       </div>
+       <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked />
+        <label class="form-check-label" for="exampleRadios1"> Monthly </label>
+       </div>
+      </div>
+      <div class="boxes d-flex align-items-center mt-4">
+       <div class="server text-center w-100 me-2">
+        <i class="fa-solid fa-server"></i>
+        <p>Megaman</p>
+       </div>
+       <div class="server text-center w-100 me-2">
+        <i class="fa-solid fa-server"></i>
+        <p>Zero</p>
+       </div>
+       <div class="server text-center w-100">
+        <i class="fa-solid fa-server"></i>
+        <p>Sigma</p>
+       </div>
+      </div>
+     </div>
+    </div>
+
+    <!-- end Backup Manager -->
+   </div>
+   <!-- end section -->
+  </div>
+  <!-- end content -->
+ </div>
+ <!-- end page -->
+ <body>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/all.min.js"></script>
+  <script src="./assets/js/index.js"></script>
+ </body>
+</html>

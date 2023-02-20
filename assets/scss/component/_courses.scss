@@ -1,0 +1,73 @@
+@use "./variables" as *;
+// start section //
+.section-courses {
+  margin: 10px;
+  @media (max-width: 500px) {
+    margin: 0;
+  }
+  .col-md-4 {
+    @media (max-width: 1300px) {
+      width: calc(100% / 3);
+    }
+    @media (max-width: 1100px) {
+      width: calc(100% / 2);
+    }
+  }
+
+  .column {
+    @media (min-width: 1600px) {
+      width: calc(100% / 5);
+    }
+    padding: 7px !important;
+    @media (max-width: 992px) {
+      padding: 10px !important;
+    }
+  }
+  .col-12 {
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  .courses-Control {
+    .card {
+      .card-img-top {
+        max-width: 100%;
+      }
+      .card-img {
+        width: 64px;
+        height: 64px;
+        border: 2px solid white;
+        left: 15px;
+        top: 15px;
+      }
+      .card-body {
+        p {
+          font-size: 14px;
+          color: gray;
+          line-height: 1.8;
+        }
+        .badge {
+          width: fit-content;
+          font-size: 13px;
+          padding: 7px 10px;
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%);
+          bottom: -21px;
+          z-index: 5;
+          background-color: #3f75ff;
+        }
+      }
+      hr {
+        opacity: 0.1;
+      }
+      .badge-gro {
+        .badge {
+          color: gray;
+        }
+      }
+    }
+  }
+}
+// end section //
